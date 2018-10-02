@@ -1,4 +1,5 @@
-Roguelike Deathmatch
+[http://WizardWars.IO](http://WizardWars.IO)
+A Roguelike Deathmatch
 
 ```
 $ cd wizard-wars
@@ -12,3 +13,5 @@ ctrl+A,D
 ```
 
 Written in Python. Uses Libtcod.
+
+![Screenshot](screenshot.png?raw=true "Screenshot")
