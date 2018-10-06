@@ -1,5 +1,11 @@
 [http://WizardWars.IO](http://WizardWars.IO)
-A Roguelike Deathmatch
+A Roguelike Deathmatch. 
+
+WizardWars.io is a turn-based combat game running on a 1-second clock.
+
+Game logic/server written in Python. Uses Libtcod and Flask. Client uses React.js.
+
+![Screenshot](screenshot.png?raw=true "Screenshot")
 
 ```
 $ cd wizard-wars
@@ -12,6 +18,4 @@ $ ./run.sh
 ctrl+A,D
 ```
 
-Written in Python. Uses Libtcod.
-
-![Screenshot](screenshot.png?raw=true "Screenshot")
+Written by R. Riley Holmes and Quantum Potato, May-October 2018
