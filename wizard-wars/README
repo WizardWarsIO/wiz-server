@@ -1,0 +1,6 @@
+The main server:
+$ ./run.sh
+
+SocketClient runs on a separate screen and sends the tick message every second:
+$ python socketclient.py
+

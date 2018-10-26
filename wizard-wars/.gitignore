@@ -1,0 +1,4 @@
+*.pyc
+libtcodpy/__init__.py
+lib/rlengine/libtcodpy/__init__.py
+.DS_Store
