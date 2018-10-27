@@ -7,8 +7,9 @@ Game logic/server written in Python. Uses Libtcod and Flask. Client uses React.j
 
 ![Screenshot](screenshot.png?raw=true "Screenshot")
 
-[90 Second Tutorial Video](https://www.youtube.com/watch?v=An9qhpav9kM)
+[1:26 Player Tutorial Video](https://www.youtube.com/watch?v=An9qhpav9kM)
 
+[58:58 Code Overview Video](https://www.youtube.com/watch?v=WU-UTHbe3Hc)
 ```
 $ cd wizard-wars
 $ screen -S server
