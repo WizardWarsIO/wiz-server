@@ -11,6 +11,15 @@ Game logic/server written in Python. Uses Libtcod and Flask. Client uses React.j
 
 [58:58 Code Overview Video](https://www.youtube.com/watch?v=WU-UTHbe3Hc)
 ```
+$ pip install flask
+$ pip install flask_socket
+$ pip install socketIO_client
+$ pip install gevent
+
+Follow the instructions for libtcod from https://github.com/libtcod/python-tcod#linux:
+$ sudo apt-get install gcc python-dev python3-dev libsdl2-dev libffi-dev libomp5
+$ pip2 install tcod
+$ pip3 install tcod
 $ cd wizard-wars
 $ screen -S server
 $ ./run.sh
