@@ -10,22 +10,49 @@ Game logic/server written in Python. Uses Libtcod and Flask. Client uses React.j
 [1:26 Player Tutorial Video](https://www.youtube.com/watch?v=An9qhpav9kM)
 
 [58:58 Code Overview Video](https://www.youtube.com/watch?v=WU-UTHbe3Hc)
+
+
+
+
+## (Optionnal but recommended) Use a virtual environment
+For more informations on `virtualenv`, check its [documentation](https://virtualenv.pypa.io/en/latest/).
+
+Start by creating a virtual environment folder.
 ```
-$ pip install flask
-$ pip install flask_socketio
-$ pip install socketIO_client
-$ pip install gevent
+$ virtualenv env
+```
+A good place for it is next to the repository folder.
+```
+.
+├── env/
+└── wiz-server/
+```
+Make sure to use python 2, this can be achieved with the `--python` option like so :
+```
+$ virtual --python=/usr/bin/python2.7 env
+```
+Finally, you have to "activate" the environment by sourcing `env/bin/activate`.
+```
+$ source env/bin/activate
+(env) $
+```
+The prompt should change to indicate the current virtual environment.
+
+## Install tcod dependencies
+The `tcod` package requires some additionnal dependencies. See the [tcod installation instructions](https://github.com/libtcod/python-tcod#installation).
+
+
+## Install Python dependencies
+The dependencies are listed in `requirements.txt`, to install them, just run
+```
+$ pip install -r requirements.txt
 ```
 
-Follow the instructions for libtcod from [https://github.com/libtcod/python-tcod#linux](https://github.com/libtcod/python-tcod#linux)
 
-```
-$ sudo apt-get install gcc python-dev python3-dev libsdl2-dev libffi-dev libomp5
-$ pip2 install tcod
-$ pip3 install tcod
-```
 
-Start the server + turn timer:
+
+
+## Start the server + turn timer:
 
 ```
 $ cd wizard-wars
