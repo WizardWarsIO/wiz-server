@@ -12,7 +12,7 @@ Game logic/server written in Python. Uses Libtcod and Flask. Client uses React.j
 [58:58 Code Overview Video](https://www.youtube.com/watch?v=WU-UTHbe3Hc)
 ```
 $ pip install flask
-$ pip install flask_socket
+$ pip install flask_socketio
 $ pip install socketIO_client
 $ pip install gevent
 ```
