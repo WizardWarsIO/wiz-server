@@ -15,6 +15,7 @@ class ExplodedUpdater(ActionUpdater):
         avatar.lastDamage = "a blast of fire from " + owner.name
         if avatar != owner:
             owner.msg('score', damage)
+        else:
             avatar.lastDamage = "fire of your own making!"
     else:
         avatar.delayedMessage('The fire doesn\'t hurt!')

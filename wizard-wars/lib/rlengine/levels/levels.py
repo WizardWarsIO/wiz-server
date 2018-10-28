@@ -2,7 +2,6 @@ from cavern import *
 from arena import *
 from debug import *
 from labyrinth import *
-from ruins import *
 from tower import *
 from maze import *
 from town import *

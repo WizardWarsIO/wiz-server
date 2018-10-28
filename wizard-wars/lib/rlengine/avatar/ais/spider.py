@@ -11,7 +11,7 @@ class SpiderAI(AIControls):
         return('fence', 'floor')
 
     def specialMeleeAttack(self):
-        return ['venom', 4]
+        return ['venom-foot', {'power': 4, 'owner': self.owner}]
 
     def meleeWeapon(self):
         return "fangs'"

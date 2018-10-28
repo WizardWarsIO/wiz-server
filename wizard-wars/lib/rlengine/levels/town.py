@@ -255,7 +255,7 @@ class Town(Level):
     return names      
 
   def minimumMonsters(self):
-    return 0
+    return 16
 
   def monsterWeights(self):
     return [

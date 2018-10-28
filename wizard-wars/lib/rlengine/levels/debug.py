@@ -10,14 +10,11 @@ class Debug(Level):
   def itemMakerMaps(self):
     return {
       'DEBUG_ITEMS': {
-        'fang dagger': 4,
-        'spark scepter': 14,
-        'fire potion': 10,
-        'inferno wand': 5,
-        'plate armor': 13,
-        'x-ray goggles': 13,
-        'obsidian boots': 13,
-        'long sword': 13}}
+        'lightning wand': 4,
+        'fire potion': 4,
+        'plate armor': 3,
+        'gas mask': 1,
+        'long sword': 3}}
 
   def itemMakerDelays(self):
     return {'DEBUG_ITEMS': 1}
@@ -40,4 +37,4 @@ class Debug(Level):
 
 
   def worldMapParams(self):
-    return {'MAP_WIDTH':30, 'MAP_HEIGHT':30, 'DEPTH':5, 'MIN_SIZE':2, 'wall_peppering': 0, 'FULL_ROOMS':True}
+    return {'MAP_WIDTH':15, 'MAP_HEIGHT':30, 'DEPTH':1, 'MIN_SIZE':2, 'wall_peppering': 0, 'FULL_ROOMS':True}

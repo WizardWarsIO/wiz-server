@@ -1,7 +1,7 @@
 from entity import *
 from renderer import *
-from physics.physics import *
 from itemmanager import *
+from physics.turnprocessor import *
 
 class Game(Entity):
     def configure(self, params):

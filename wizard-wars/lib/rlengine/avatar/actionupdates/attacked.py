@@ -22,7 +22,7 @@ class AttackedUpdater(ActionUpdater):
     if attackType == 'swipe':
         if hitFor > 0:
             duckWord = avatar.getDuckWord()
-            avatar.logMessage('You ' + duckWord + '! ' + assailant.name + 's ' + meleeWeapon + ' swipes you for ' + str(hitFor) + 'damage.')
+            avatar.logMessage('You ' + duckWord + '! ' + assailant.name + 's ' + meleeWeapon + ' swipes you for ' + str(hitFor) + ' damage.')
             avatar.lastDamage = assailant.name + '\'s ' + meleeWeapon
         else:
             evadeWord = avatar.getEvadeWord()

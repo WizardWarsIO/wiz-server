@@ -3,7 +3,6 @@ from entity import *
 from item import *
 from itemmaker import *
 from items.items import *
-from physics.physics import *
 from world.world import *
 from avatar.avatar import *
 from game import *

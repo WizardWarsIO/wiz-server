@@ -1,5 +1,4 @@
 from actionupdater import *
-from ... import libtcodpy as libtcod
 
 class ChaosUpdater(ActionUpdater):
   def topic(self):

@@ -31,13 +31,12 @@ class Labyrinth(Level):
   def itemMakerMaps(self):
     return {
       'ATTACK_ITEMS': {
-        'lightning wand': 2,
-        'fire potion': 6,
-        'acid potion': 2,
-        'poison potion': 2,
-        'stone wand': 5,
-        'warp wand': 4,
-        'spark scepter': 6,
+        'lightning wand': 3,
+        'fire potion': 4,
+        'acid potion': 3,
+        'poison potion': 3,
+        'warp wand': 2,
+        'spark scepter': 4,
         'inferno wand': 2},
 
       'BONUS_ATTACK_ITEMS': {
