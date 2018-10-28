@@ -15,11 +15,19 @@ $ pip install flask
 $ pip install flask_socket
 $ pip install socketIO_client
 $ pip install gevent
+```
 
-Follow the instructions for libtcod from [https://github.com/libtcod/python-tcod#linux](https://github.com/libtcod/python-tcod#linux):
+Follow the instructions for libtcod from [https://github.com/libtcod/python-tcod#linux](https://github.com/libtcod/python-tcod#linux)
+
+```
 $ sudo apt-get install gcc python-dev python3-dev libsdl2-dev libffi-dev libomp5
 $ pip2 install tcod
 $ pip3 install tcod
+```
+
+Start the server + turn timer:
+
+```
 $ cd wizard-wars
 $ screen -S server
 $ ./run.sh
