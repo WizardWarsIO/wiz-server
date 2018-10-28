@@ -1,5 +1,5 @@
 from ..entity import *
-from .. import libtcodpy as libtcod
+import tcod as libtcod
 
 class SpawnProcessor(Entity):
     def handleMessage(self, name, value):

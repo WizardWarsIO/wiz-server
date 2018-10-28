@@ -1,6 +1,6 @@
 from ..entity import *
 from exploder import *
-from .. import libtcodpy as libtcod
+import tcod as libtcod
 
 class ExplosionProcessor(Entity):
     def addExplosion(self, data, item, worldMap):

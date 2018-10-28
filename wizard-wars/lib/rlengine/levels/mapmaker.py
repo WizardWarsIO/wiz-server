@@ -1,4 +1,4 @@
-from .. import libtcodpy as libtcod
+import tcod as libtcod
 from random import randint
 
 itemTypes = ['Wand', 'Weapon', 'Corpse']

@@ -1,5 +1,5 @@
 from ai import *
-from ... import libtcodpy as libtcod
+import tcod as libtcod
 from random import randint
 
 class WizardAI(AIControls):

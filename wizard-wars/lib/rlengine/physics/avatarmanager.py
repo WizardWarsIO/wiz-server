@@ -1,5 +1,5 @@
 from ..entity import *
-from .. import libtcodpy as libtcod
+import tcod as libtcod
 from corpse import *
 from random import randint
 
