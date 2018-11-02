@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from flask_socketio import SocketIO, emit, send
+import threading
 
 from client import *
 import json
@@ -21,7 +22,7 @@ sockets = {}
 app = Flask(__name__, static_url_path='')
 socketio = SocketIO(app)
 
-game = None 
+game = None
 
 class Socket:
     def __init__(self, sid):
@@ -74,7 +75,7 @@ def joingame(message):
         game = client.makeGame({'gameID':1, 'avatarList':allAvatars()})
 
     styleGuide = client.styleGuide
-    sockets[pid].emit('foo', {'playerID':pid, 'styleGuide':styleGuide}) 
+    sockets[pid].emit('foo', {'playerID':pid, 'styleGuide':styleGuide})
 
 @socketio.on('masterloop')
 def masterloop():
@@ -86,7 +87,7 @@ def masterloop():
     gc.collect()
     sidsToRemove = []
     firstPlace = game.firstPlace()
-    
+
     global sockets
     if game.isFinished:
         for playerID in sockets.keys():
@@ -120,7 +121,7 @@ def removePlayerData(sidsToRemove):
     for sid in sidsToRemove:
         sockets[sid].emit('gameover', {'game':'over'})
         print "Removing player" + playerNames[sid]
-        del sockets[sid]  
+        del sockets[sid]
         del avatars[sid]
         del playerNames[sid]
         printPlayerNames()
@@ -153,3 +154,14 @@ def input_response(message):
     direction = move['dir']
     moveTo = moveDirs[direction]
     game.msg('input', {'name': playerID, 'intent':{'type':intentType, 'item':itemNum, 'direction':moveTo}})
+
+
+def set_interval(func, sec):
+    def func_wrapper():
+        set_interval(func, sec)
+        func()
+    t = threading.Timer(sec, func_wrapper)
+    t.start()
+    return t
+
+set_interval(masterloop, 1)
