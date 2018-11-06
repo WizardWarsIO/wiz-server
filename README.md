@@ -14,7 +14,7 @@ Game logic/server written in Python. Uses Libtcod and Flask. Client uses React.j
 
 
 
-## (Optionnal but recommended) Use a virtual environment
+## (Optional but recommended) Use a virtual environment
 For more informations on `virtualenv`, check its [documentation](https://virtualenv.pypa.io/en/latest/).
 
 Start by creating a virtual environment folder.
@@ -29,7 +29,7 @@ A good place for it is next to the repository folder.
 ```
 Make sure to use python 2, this can be achieved with the `--python` option like so :
 ```
-$ virtual --python=/usr/bin/python2.7 env
+$ virtualenv --python=/usr/bin/python2.7 env
 ```
 Finally, you have to "activate" the environment by sourcing `env/bin/activate`.
 ```
